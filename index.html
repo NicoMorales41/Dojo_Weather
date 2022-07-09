@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header>
+        <div id="top-nav" >
+            <h1>DojoWeather</h1>
+            <ul>
+                <li onclick="Loading()">Burbank</li>
+                <li onclick="Loading()" >Chicago</li>
+                <li onclick="Loading()" >Dallas</li>
+            </ul>
+        </div>
+    </header>
+    <div id="city-weather">
+        <h1>San José</h1>
+        <ul>
+            <p>show temperature in</p>
+            <select name="temperature" id="selector" onchange="selectTemp(this)">
+                <option onclick="Celsius()">Cº</option>
+                <option onclick="Farenheit()">Fº</option>
+            </select>
+        </ul>
+    </div>
+    <div id="box-weather">
+        <div class="today">
+            <h2>Today</h2> <br>
+            <img class="clouds" src="./IMG/assets/some_rain.png" alt="rain img">
+            <p>Some rain</p> <br>
+            <p>
+                <span class="red" id="tempe1">24</span>
+                <span class="blue" id="tempe2">18</span>
+            </p>
+        </div>
+        <div class="today">
+            <h2>Today</h2> <br>
+            <img class="clouds" src="./IMG/assets/some_rain.png" alt="rain img">
+            <p>Some rain</p> <br>
+            <p>
+                <span class="red" id="tempe3">27</span>
+                <span class="blue" id="tempe4">19</span>
+            </p>
+        </div>
+        <div class="today">
+            <h2>Today</h2> <br>
+            <img class="clouds" src="./IMG/assets/some_clouds.png" alt="rain img">
+            <p>Some clouds</p> <br>
+            <p>
+                <span class="red" id="tempe5">25</span>
+                <span class="blue" id="tempe6">18</span>
+            </p>
+        </div>
+        <div class="today">
+            <h2>Today</h2> <br>
+            <img class="clouds" src="./IMG/assets/some_sun.png" alt="rain img">
+            <p>Some sun</p> <br>
+            <p>
+                <span class="red" id="tempe7">27</span>
+                <span class="blue" id="tempe8">17</span>
+            </p>
+        </div>
+    </div>
+    <div id="cookie">
+        <img src="./IMG/assets/cookie.png" alt="cookie img">
+        <div class="words">
+            <h3><strong>Stop! Cookie Time</strong></h3>
+            <p>We use cookies (sadly not the edibles ones :c ) to personalize contents and ads, to provide social media features and to analyze our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button class="accept" onclick="Remove()"> I accept</button>
+    </div>
+
+
+
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
